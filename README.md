@@ -38,14 +38,23 @@ net user ssm-user để kiểm tra thời giang login của từng user
 <img width="1913" height="982" alt="image" src="https://github.com/user-attachments/assets/d71522d2-498e-42e0-ba97-203dedf7592f" />
 
 
-never nghĩa là theo thông tin local user, tài khoản đó chưa từng đăng nhập
+với administrator
 
-khi kiểm tra jenny thì tài khoản này có thời gian last logon
+kết quả:
 
-=> so với các user còn lại, jenny là user có dấu hiệu đăng nhập gần nhất
+last logon: 6/2/2026 3:26:23 pm
 
-đáp án
+với john
+kết quả:
 
-jenny
+last logon: 3/2/2019 5:48:32 pm
+
+các user còn lại khi kiểm tra last logon thì hiện never
+
+so sánh các mốc thời gian, administrator có thời gian đăng nhập mới nhất
+
+=> user logged in last là administrator nên đáp án là 
+
+administrator
 
 
