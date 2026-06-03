@@ -140,3 +140,38 @@ lý do em chốt task này là vì cách đặt tên của nó, kẻ tấn công
 clean file system
 
 ```
+---
+
+câu 7
+
+em mở thẻ actions của task clean file system
+
+trong cột details có ghi rõ đường dẫn c:\tmp\nc.ps1 -l 1348
+
+từ đây em thấy file được cấu hình để chạy hàng ngày là nc.ps1
+
+đáp án
+
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/785dd9bb-ee84-45b0-be84-e53eaaf45bf9" />
+
+```
+nc.ps1
+
+```
+
+câu 8
+
+kiểm tra thẻ actions của task clean file system
+
+trong phần details lệnh thực thi là c:\tmp\nc.ps1 -l 1348
+
+tham số -l là listen và 1348 chính là cổng cục bộ mã độc dùng để listen
+
+
+<img width="1895" height="935" alt="image" src="https://github.com/user-attachments/assets/932480a3-658e-4c9c-bf0f-e2ed03b78cf8" />
+
+đáp án
+```
+1348
+```
+
