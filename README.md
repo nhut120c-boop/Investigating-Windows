@@ -83,6 +83,8 @@ vì câu này hỏi riêng thời gian đăng nhập cuối của john, nên em 
 ```
 03/02/2019 5:48:32 PM
 ```
+---
+câu 4
 đầu tiên em vào regedit
 
 sau đó em tìm đến đường dẫn ```hkey_local_machine\software\microsoft\windows\currentversion\run```để xem các chương trình tự động chạy cùng hệ thống
