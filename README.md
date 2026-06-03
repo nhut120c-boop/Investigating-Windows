@@ -212,3 +212,20 @@ nên em nghĩ ngày xảy ra sự cố là 3/2/2019
 ```
 03/02/2019
 ```
+
+để tìm thời gian cấp quyền em mở event viewer
+
+vào mục windows logs và chọn security
+
+<img width="1054" height="885" alt="image" src="https://github.com/user-attachments/assets/e83cc2f6-d7e3-42c8-bede-4546329b500d" />
+
+sau đó em dùng lọc filter tìm event id là 4672, vì đây là mã log báo hiệu có đặc quyền vừa được cấp
+
+<img width="1240" height="829" alt="image" src="https://github.com/user-attachments/assets/bcfb475d-9947-4af5-925c-7273dd5fea2a" />
+ nhưng vì lượng log quá lớn nên không xài lọc bth được, Vm của THM không nổi
+
+nên em mở powershell lên và chạy lệnh này để lấy thẳng các log 4672:
+```
+Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4672} | Format-Table TimeCreated
+```
+
