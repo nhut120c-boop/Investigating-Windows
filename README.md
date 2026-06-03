@@ -104,3 +104,21 @@ từ chuỗi này em lấy được ip cần tìm
 
 câu 5
 
+em vào computer management
+
+mở local users and groups chọn groups
+
+nhấp đúp vào administrators
+
+trong bảng members thấy có administrator, guest và jenny
+
+đề yêu cầu 2 tài khoản ngoài administrator và xếp abc nên em chọn guest và jenny
+
+
+<img width="1023" height="520" alt="image" src="https://github.com/user-attachments/assets/a3078fd2-bb06-4dd0-9324-7b61db3e6cff" />
+
+
+đáp án
+```
+Guest, Jenny
+```
