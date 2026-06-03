@@ -124,9 +124,9 @@ Guest, Jenny
 ```
 câu 6
 
-em mở task scheduler và kiểm tra danh sách active tasks
+em mở ```task scheduler``` và kiểm tra danh sách active tasks
 
-em chú ý đến task clean file system được lên lịch chạy hàng ngày vào 4:55 pm
+em chú ý đến task ```clean file system``` được lên lịch chạy hàng ngày vào ```4:55 pm```
 
 lý do em chốt task này là vì cách đặt tên của nó, kẻ tấn công cố tình dùng cái tên nghe có vẻ giống chức năng dọn dẹp để ngụy trang đánh lừa mắt người quản trị, nhưng thực tế windows không có tác vụ mặc định nào ghi tên chung chung như vậy
 
