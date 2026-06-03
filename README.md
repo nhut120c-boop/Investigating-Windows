@@ -122,3 +122,21 @@ trong bảng members thấy có administrator, guest và jenny
 ```
 Guest, Jenny
 ```
+câu 6
+
+em mở task scheduler và kiểm tra danh sách active tasks
+
+em chú ý đến task clean file system được lên lịch chạy hàng ngày vào 4:55 pm
+
+lý do em chốt task này là vì cách đặt tên của nó, kẻ tấn công cố tình dùng cái tên nghe có vẻ giống chức năng dọn dẹp để ngụy trang đánh lừa mắt người quản trị, nhưng thực tế windows không có tác vụ mặc định nào ghi tên chung chung như vậy
+
+<img width="1024" height="535" alt="image" src="https://github.com/user-attachments/assets/06d72a89-6ba6-400a-a9e4-6fd352df8823" />
+
+<img width="1024" height="525" alt="image" src="https://github.com/user-attachments/assets/7a409608-1462-4815-abce-1197980e3422" />
+
+đáp án
+
+```
+clean file system
+
+```
