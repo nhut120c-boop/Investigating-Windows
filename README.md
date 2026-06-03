@@ -192,3 +192,23 @@ vậy nên tài khoản này chưa từng được đăng nhập
 ```
 Never
 ```
+
+câu 10
+
+để tìm ngày hệ thống bị xâm nhập em xem lại các mốc thời gian bất thường đã thu thập được từ đầu đến giờ
+
+thời gian đăng nhập cuối cùng của user john là 3/2/2019
+
+<img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/8c784bc7-a6f8-42e3-a338-8319319f5e1f" />
+
+
+ngoài ra khi xem phần triggers của task clean file system cũng dc tạo để chạy bắt đầu từ ngày 3/2/2019
+
+<img width="984" height="745" alt="image" src="https://github.com/user-attachments/assets/bb8e460e-a1c4-4320-ba73-94193bc36120" />
+
+nên em nghĩ ngày xảy ra sự cố là 3/2/2019
+
+đáp án
+```
+03/02/2019
+```
