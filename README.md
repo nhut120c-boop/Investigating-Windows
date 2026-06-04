@@ -299,3 +299,33 @@ xem cột date modified (3/2/2019) thấy lòi ra file lạ b.jsp
 ```
 .jsp
 ```
+câu 15
+
+mở windows defender firewall with advanced security
+
+chọn mục inbound rules
+
+ta thấy 1 rules có tên lạ
+
+<img width="1536" height="757" alt="image" src="https://github.com/user-attachments/assets/ed9f5387-7c1d-4647-b68c-1f0113b700d5" />
+
+bấm đúp vào nó, chuyển sang tab protocols and ports
+
+nhìn vào dòng local port sẽ thấy cổng được mở
+
+<img width="990" height="707" alt="image" src="https://github.com/user-attachments/assets/d922a0ff-a64f-4a80-ae4c-63e64354f356" />
+
+đáp án
+```
+1337
+```
+
+câu 16
+
+như cái ảnh chụp file hosts ở câu 13 lúc nãy, anh thấy rõ hacker đã ép ip lạ 76.32.97.132 đi liền với tên miền nào
+
+đó chính là trang web bị nhắm mục tiêu (targeted) để đầu độc dns
+
+đáp án
+
+google.com
