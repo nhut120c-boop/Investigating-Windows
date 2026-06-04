@@ -212,20 +212,51 @@ nên em nghĩ ngày xảy ra sự cố là 3/2/2019
 ```
 03/02/2019
 ```
+câu 11
+để tìm thời gian cấp quyền em mở powershell lên và chạy lệnh lọc log 4672 trong ngày 3/2/2019:
 
-để tìm thời gian cấp quyền em mở event viewer
+Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4672} | Where-Object {$_.TimeCreated.Month -eq 3 -and $_.TimeCreated.Day -eq 2} | Sort-Object TimeCreated | Select-Object TimeCreated, Message
 
-vào mục windows logs và chọn security
+kết quả hiện ra rất nhiều log cấp quyền cho user SYSTEM, trong đó có mốc 4:04:40 pm và 4:04:49 pm nội dung giống hệt nhau
 
-<img width="1054" height="885" alt="image" src="https://github.com/user-attachments/assets/e83cc2f6-d7e3-42c8-bede-4546329b500d" />
+vì không có gì khác biệt để phân biệt nên em mở hint của đề bài xem thử thì thấy gợi ý là: 00/00/0000 0:00:49 PM
 
-sau đó em dùng lọc filter tìm event id là 4672, vì đây là mã log báo hiệu có đặc quyền vừa được cấp
+<img width="667" height="512" alt="image" src="https://github.com/user-attachments/assets/971cd3f2-607e-425b-a084-17bd6b8beeae" />
 
-<img width="1240" height="829" alt="image" src="https://github.com/user-attachments/assets/bcfb475d-9947-4af5-925c-7273dd5fea2a" />
- nhưng vì lượng log quá lớn nên không xài lọc bth được, Vm của THM không nổi
+dựa vào số 49 giây ở đuôi của hint, em coi lại số giây giống
 
-nên em mở powershell lên và chạy lệnh này để lấy thẳng các log 4672:
+đáp án
 ```
-Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4672} | Format-Table TimeCreated
+03/02/2019 4:04:49 PM
 ```
+câu 12
 
+để tìm xem hacker đã dùng tool gì để lấy mật khẩu, em mở event viewer lên
+
+sau đó em tìm đến đường dẫn applications and services logs 
+
+<img width="1522" height="750" alt="image" src="https://github.com/user-attachments/assets/f06312dd-296b-44a7-a2cb-407718dc6add" />
+
+-> microsoft
+<img width="1530" height="812" alt="image" src="https://github.com/user-attachments/assets/f2bfa880-b643-4e3c-a19c-ae6c447f77ca" />
+
+-> windows 
+
+<img width="1495" height="781" alt="image" src="https://github.com/user-attachments/assets/ad3ea886-edd5-4dbc-a8e1-e7223ce8bc8c" />
+
+-> windows defender -> operational để xem lịch sử của phần mềm diệt virus windows defender
+
+<img width="1501" height="792" alt="image" src="https://github.com/user-attachments/assets/e603d93c-fc73-4e3d-a76a-43864f5899e7" />
+
+
+kiểm tra các log cảnh báo trong này, em thấy có log ghi nhận windows defender đã phát hiện ra mã độc
+
+nhìn vào phần chi tiết của log đó, em thấy hệ thống ghi rõ tên phần mềm độc hại là mimikatz
+
+<img width="1531" height="761" alt="image" src="https://github.com/user-attachments/assets/0343e8c9-b304-4fb2-900d-f3bf1fa2d5a4" />
+
+
+đáp án
+```
+mimikatz
+```
