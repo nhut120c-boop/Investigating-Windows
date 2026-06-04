@@ -260,3 +260,42 @@ nhìn vào phần chi tiết của log đó, em thấy hệ thống ghi rõ tên
 ```
 mimikatz
 ```
+câu 13
+
+để tìm ip máy chủ c2 của kẻ tấn công, em kiểm tra file hosts của hệ thống vì hacker rất hay sửa file này để đầu độc dns (dns poisoning)
+
+thay vì dùng lệnh, em mở file explorer lên và vào theo đường dẫn c:\windows\system32\drivers\etc
+<img width="1536" height="822" alt="image" src="https://github.com/user-attachments/assets/a113dcc6-5cfd-4c1f-8771-e85cbb34e07a" />
+
+để tìm ip máy chủ c2, em vào đường dẫn c:\windows\system32\drivers\etc và mở file hosts bằng notepad
+
+kéo xuống cuối file em thấy có nhiều dòng bị chèn thêm vào bất thường
+
+nó ép các web diệt virus như virustotal về 127.0.0.1 để vô hiệu hóa bảo mật, không cho máy quét mã độc
+
+nó đưa google.com về một ip public lạ là 76.32.97.132
+
+<img width="1297" height="762" alt="image" src="https://github.com/user-attachments/assets/b373119b-529b-4bca-a67f-ba926b065b02" />
+
+vì đề hỏi ip bên ngoài, nên cái ip lạ được gán cho google.com là server để thu thập dữ liệu
+đáp án 
+```
+ 76.32.97.132
+
+```
+câu 14
+
+để tìm đuôi file shell hacker upload qua web, em kiểm tra log của iis
+
+khong thấy thư mục log nên em vào thẳng c:\inetpub\wwwroot chứa code web
+
+xem cột date modified (3/2/2019) thấy lòi ra file lạ b.jsp
+
+<img width="900" height="492" alt="image" src="https://github.com/user-attachments/assets/2ae9ce84-8877-4422-ade1-fea5ee94b1f5" />
+
+đuôi jsp hay dc dùng làm web shell
+
+đáp án
+```
+.jsp
+```
